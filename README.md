@@ -11,3 +11,8 @@ tracks the target's location using his IP address
 scans the network and returns the IP and MAC addresses of other systems in the defined IP range. \
 run as root \
 (unstable)
+
+## reverse connection malware and handler
+plan to make a malware that sends reverse tcp connection and a handler that recieves that connection (using sockets) \
+Socket folder contains working client and server classes. and server and client instances that **rickroll** each other. \
+the handler and the virus are not complete yet
