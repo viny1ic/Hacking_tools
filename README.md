@@ -8,6 +8,6 @@ changes the mac address for your linux machine
 tracks the target's location using his IP address
 
 ## Network scanner
-scans the network and returns the IP and MAC addresses of other systems in the defined IP range.\n
-run as root\n
+scans the network and returns the IP and MAC addresses of other systems in the defined IP range. \
+run as root \
 (unstable)
