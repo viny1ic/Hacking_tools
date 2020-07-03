@@ -25,6 +25,6 @@ def handler(sock):
         if user_input=="exit":
             print("[+] Exiting handler")
             break
-        if user_input=="1":
+        if user_input=="shell":
             print("[+] Starting shell")
             execute_command(sock)
