@@ -13,6 +13,10 @@ run as root \
 unstable (might give wrong output)
 
 ## reverse connection malware and handler
-plan to make a malware that sends reverse tcp connection and a handler that recieves that connection (using sockets) \
-Socket folder contains working client and server classes. and server and client instances that **rickroll** each other. \
-the handler and the virus are not complete yet
+reverse TCP payload and Handler using sockets \
+run server.py for the handler and the client.py for payload \
+execute shell commands on victim\
+tested on ubuntu and kali\
+executes most commands but is buggy for a few commands
+
+
