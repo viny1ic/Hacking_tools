@@ -1,5 +1,6 @@
 import socket
 
+delimiter="<END_OF_COMMAND>"
 chunk_size= 4*1024
 class server_connection:
     def __init__(self):
@@ -27,3 +28,14 @@ class server_connection:
         self.recieved=self.client_sock.recv(chunk_size)
         self.data_decoded=self.recieved.decode("utf-8")
         return self.data_decoded
+
+    def recieve_command(self):
+        result=b''
+        while True:
+            chunk=self.sock.recv(chunk_size)
+            if chunk.endswith(delimiter.encode()):
+                chunk+=chunk[:-len(delimiter)]
+                result+=chunk
+                break
+            result+=chunk
+        print(result.decode())

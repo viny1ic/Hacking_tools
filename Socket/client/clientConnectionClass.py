@@ -1,5 +1,5 @@
 import socket
-
+delimiter="<END_OF_COMMAND>"
 chunk_size= 4*1024
 class client_connection:
     def __init__(self):
@@ -20,3 +20,7 @@ class client_connection:
         self.recieved=self.sock.recv(chunk_size)
         self.data_decoded=self.recieved.decode("utf-8")
         return self.data_decoded
+    
+    def send_command_results(self,command):
+        cmd=command+delimiter
+        self.sock.sendall(cmd.encode())
