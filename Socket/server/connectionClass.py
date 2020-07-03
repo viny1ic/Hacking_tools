@@ -7,7 +7,7 @@ class server_connection:
         #create a TCP socket for server
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         
-    def create_connection(self, ip="",port=7777):
+    def create_connection(self, ip,port):
         #bind to server and listen for incoming connections
         self.server_ip=ip
         self.server_port=port
