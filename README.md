@@ -10,7 +10,7 @@ tracks the target's location using his IP address
 ## Network scanner
 scans the network and returns the IP and MAC addresses of other systems in the defined IP range. \
 run as root \
-(unstable)
+unstable (might give wrong output)
 
 ## reverse connection malware and handler
 plan to make a malware that sends reverse tcp connection and a handler that recieves that connection (using sockets) \
