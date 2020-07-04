@@ -6,6 +6,8 @@ changes the mac address for your linux machine
 
 ## IP tracker:
 tracks the target's location using his IP address
+## Keylogger
+stores the keystrokes of the user
 
 ## Network scanner
 scans the network and returns the IP and MAC addresses of other systems in the defined IP range. \
