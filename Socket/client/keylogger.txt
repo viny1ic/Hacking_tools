@@ -1,0 +1,9 @@
+Time of initiation: Sun Jul  5 15:08:03 2020
+------------------
+abcdefghikasdfvqw Key.spaceefwerfwed Key.spacefnwoeif Key.spaceoiwef Key.spaceoidhfsdff Key.spaces Key.spaceKey.esc
+------------------
+Time of termination: Sun Jul  5 15:08:16 2020
+Key.esc
+------------------
+Time of termination: Sun Jul  5 15:08:18 2020
+Key.ctrlc
