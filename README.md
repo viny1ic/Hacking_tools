@@ -21,4 +21,5 @@ execute shell commands on victim\
 tested on ubuntu and kali\
 executes most commands but is buggy for a few commands
 
-
+## hashcat.ipynb
+Using hashcat on google colab to take advantage of their GPUs for super fast password cracking
