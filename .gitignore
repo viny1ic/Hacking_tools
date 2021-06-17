@@ -1,1 +1,4 @@
 ransomware/env
+build
+crypt.spec
+__pycache__
