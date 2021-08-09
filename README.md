@@ -17,9 +17,14 @@ unstable (might give wrong output)
 ## reverse connection malware and handler
 reverse TCP payload and Handler using sockets \
 run server.py for the handler and the client.py for payload \
-execute shell commands on victim\
-tested on ubuntu and kali\
+execute shell commands on victim \
+tested on ubuntu and kali \
+currently works on LAN only \
 executes most commands but is buggy for a few commands
+
+## ransomware
+ransomware built on the reverse TCP connection malware
+
 
 ## hashcat.ipynb
 Using hashcat on google colab to take advantage of their GPUs for super fast password cracking
